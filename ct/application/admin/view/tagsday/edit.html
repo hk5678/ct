@@ -1,0 +1,88 @@
+<form id="edit-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Plant')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-PLANT" class="form-control" name="row[PLANT]" type="text" value="{$row.PLANT|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Plc_id')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-PLC_ID" data-rule="required" data-source="PLC/index" class="form-control selectpage" name="row[PLC_ID]" type="text" value="{$row.PLC_ID|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Ctdate')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-CTDATE" class="form-control datetimepicker" data-date-format="YYYY-MM-DD" data-use-current="true" name="row[CTDATE]" type="text" value="{$row.CTDATE}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Parts')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-PARTS" class="form-control" name="row[PARTS]" type="text" value="{$row.PARTS|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Quantity')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-QUANTITY" class="form-control" name="row[QUANTITY]" type="number" value="{$row.QUANTITY|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Shift')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-SHIFT" class="form-control" name="row[SHIFT]" type="text" value="{$row.SHIFT|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Num')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-Num" class="form-control" name="row[Num]" type="number" value="{$row.Num|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Ct')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-CT" class="form-control" name="row[CT]" type="number" value="{$row.CT|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Rowguid')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-rowguid" class="form-control" name="row[rowguid]" type="text" value="{$row.rowguid|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Seqnum')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-SEQNUM" class="form-control" name="row[SEQNUM]" type="number" value="{$row.SEQNUM|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Status')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-Status" class="form-control" name="row[Status]" type="text" value="{$row.Status|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Plc_name')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-PLC_Name" class="form-control" name="row[PLC_Name]" type="text" value="{$row.PLC_Name|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Uapno')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-UAPno" class="form-control" name="row[UAPno]" type="text" value="{$row.UAPno|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-primary btn-embossed disabled">{:__('OK')}</button>
+            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+        </div>
+    </div>
+</form>
